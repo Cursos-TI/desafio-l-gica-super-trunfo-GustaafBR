@@ -1,5 +1,34 @@
 #include <stdio.h>
+//funções adicionais
+int ComparPopulacao(){
 
+} //Retorna a comparação dos valores das cartas em relação a estatística Populacao
+
+int ComparArea(){
+
+} //Retorna a comparação dos valores das cartas em relação a estatística Area
+
+int ComparPIB(){
+
+} //Retorna a comparação dos valores das cartas em relação a estatística PIB
+
+int ComparPontosTuristicos(){
+
+} //Retorna a comparação dos valores das cartas em relação a estatística Pontos Turisticos
+
+int ComparDensidadeDemografica(){
+
+} //Retorna a comparação dos valores das cartas em relação a estatística Densidade Demografica
+
+int ComparPIBPerCapita(){
+
+} //Retorna a comparação dos valores das cartas em relação a estatística PIB Per Capita
+
+int ComparSuperPoder(){
+
+} //Retorna a comparação dos valores das cartas em relação a estatística Super Poder
+
+//função principal
 int main(){
     char estado1[50], estado2[50]; //string
     char codigocarta1[50], codigocarta2[50]; //string

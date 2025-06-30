@@ -1,31 +1,59 @@
 #include <stdio.h>
 //funções adicionais
-int ComparPopulacao(){
-
+int CompararPopulacao(int ValCopiado1,int ValCopiado2){
+    if(ValCopiado1 > ValCopiado2){
+        return ;
+    } else {
+        return ;
+    }
 } //Retorna a comparação dos valores das cartas em relação a estatística Populacao
 
-int ComparArea(){
-
+int CompararArea(float ValCopiado1,float ValCopiado2){
+    if(ValCopiado1 > ValCopiado2){
+        return ;
+    } else {
+        return ;
+    }
 } //Retorna a comparação dos valores das cartas em relação a estatística Area
 
-int ComparPIB(){
-
+int CompararPIB(float ValCopiado1,float ValCopiado2){
+    if(ValCopiado1 > ValCopiado2){
+        return ;
+    } else {
+        return ;
+    }
 } //Retorna a comparação dos valores das cartas em relação a estatística PIB
 
-int ComparPontosTuristicos(){
-
+int CompararPontosTuristicos(int ValCopiado1,int ValCopiado2){
+    if(ValCopiado1 > ValCopiado2){
+        return ;
+    } else {
+        return ;
+    }
 } //Retorna a comparação dos valores das cartas em relação a estatística Pontos Turisticos
 
-int ComparDensidadeDemografica(){
-
+int CompararDensidadeDemografica(float ValCopiado1,float ValCopiado2){
+    if(ValCopiado1 > ValCopiado2){
+        return ;
+    } else {
+        return ;
+    }
 } //Retorna a comparação dos valores das cartas em relação a estatística Densidade Demografica
 
-int ComparPIBPerCapita(){
-
+int CompararPIBPerCapita(float ValCopiado1,float ValCopiado2){
+    if(ValCopiado1 > ValCopiado2){
+        return ;
+    } else {
+        return ;
+    }
 } //Retorna a comparação dos valores das cartas em relação a estatística PIB Per Capita
 
-int ComparSuperPoder(){
-
+int CompararSuperPoder(float ValCopiado1,float ValCopiado2){
+    if(ValCopiado1 > ValCopiado2){
+        return ;
+    } else {
+        return ;
+    }
 } //Retorna a comparação dos valores das cartas em relação a estatística Super Poder
 
 //função principal

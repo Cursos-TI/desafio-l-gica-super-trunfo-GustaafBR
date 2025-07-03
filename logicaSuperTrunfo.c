@@ -1,58 +1,75 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
 //funções adicionais
-int CompararPopulacao(int ValCopiado1,int ValCopiado2){
+int CompararPopulacao(int ValCopiado1, int ValCopiado2, char NomeDCidade1[], char NomeDCidade2[]){
     if(ValCopiado1 > ValCopiado2){
-        return ;
+        return printf("Comparação de Cartas (Atributo: População)\n\nCarta 1 - %s: %i\nCarta 2 - %s: %i\n\nResultado: Carta 1 venceu !", NomeDCidade1, ValCopiado1, NomeDCidade2, ValCopiado2);
+    } else if(ValCopiado1 < ValCopiado2){
+        return printf("Comparação de Cartas (Atributo: População)\n\nCarta 1 - %s: %i\nCarta 2 - %s: %i\n\nResultado: Carta 2 venceu !", NomeDCidade1, ValCopiado1, NomeDCidade2, ValCopiado2);
     } else {
-        return ;
+        return printf("Comparação de Cartas (Atributo: População)\n\nCarta 1 - %s: %i\nCarta 2 - %s: %i\n\nResultado: Empate !", NomeDCidade1, ValCopiado1, NomeDCidade2, ValCopiado2);
     }
 } //Retorna a comparação dos valores das cartas em relação a estatística Populacao
 
-int CompararArea(float ValCopiado1,float ValCopiado2){
+int CompararArea(float ValCopiado1, float ValCopiado2, char NomeDCidade1[], char NomeDCidade2[]){
     if(ValCopiado1 > ValCopiado2){
-        return ;
+        return printf("Comparação de Cartas (Atributo: Área)\n\nCarta 1 - %s: %.2f\nCarta 2 - %s: %.2f\n\nResultado: Carta 1 venceu !", NomeDCidade1, ValCopiado1, NomeDCidade2, ValCopiado2);
+    } else if(ValCopiado1 < ValCopiado2){
+        return printf("Comparação de Cartas (Atributo: Área)\n\nCarta 1 - %s: %.2f\nCarta 2 - %s: %.2f\n\nResultado: Carta 2 venceu !", NomeDCidade1, ValCopiado1, NomeDCidade2, ValCopiado2);
     } else {
-        return ;
+        return printf("Comparação de Cartas (Atributo: População)\n\nCarta 1 - %s: %.2f\nCarta 2 - %s: %.2f\n\nResultado: Empate !", NomeDCidade1, ValCopiado1, NomeDCidade2, ValCopiado2);
     }
 } //Retorna a comparação dos valores das cartas em relação a estatística Area
 
-int CompararPIB(float ValCopiado1,float ValCopiado2){
+int CompararPIB(float ValCopiado1, float ValCopiado2, char NomeDCidade1[], char NomeDCidade2[]){
     if(ValCopiado1 > ValCopiado2){
-        return ;
+        return printf("Comparação de Cartas (Atributo: PIB)\n\nCarta 1 - %s: %.2f\nCarta 2 - %s: %.2f\n\nResultado: Carta 1 venceu !", NomeDCidade1, ValCopiado1, NomeDCidade2, ValCopiado2);
+    } else if(ValCopiado1 < ValCopiado2){
+        return printf("Comparação de Cartas (Atributo: PIB)\n\nCarta 1 - %s: %.2f\nCarta 2 - %s: %.2f\n\nResultado: Carta 2 venceu !", NomeDCidade1, ValCopiado1, NomeDCidade2, ValCopiado2);
     } else {
-        return ;
+        return printf("Comparação de Cartas (Atributo: População)\n\nCarta 1 - %s: %.2f\nCarta 2 - %s: %.2f\n\nResultado: Empate !", NomeDCidade1, ValCopiado1, NomeDCidade2, ValCopiado2);
     }
 } //Retorna a comparação dos valores das cartas em relação a estatística PIB
 
-int CompararPontosTuristicos(int ValCopiado1,int ValCopiado2){
+int CompararPontosTuristicos(int ValCopiado1, int ValCopiado2, char NomeDCidade1[], char NomeDCidade2[]){
     if(ValCopiado1 > ValCopiado2){
-        return ;
+        return printf("Comparação de Cartas (Atributo: Pontos Turísticos)\n\nCarta 1 - %s: %i\nCarta 2 - %s: %i\n\nResultado: Carta 1 venceu !", NomeDCidade1, ValCopiado1, NomeDCidade2, ValCopiado2);
+    } else if(ValCopiado1 < ValCopiado2){
+        return printf("Comparação de Cartas (Atributo: Pontos Turísticos)\n\nCarta 1 - %s: %i\nCarta 2 - %s: %i\n\nResultado: Carta 2 venceu !", NomeDCidade1, ValCopiado1, NomeDCidade2, ValCopiado2);
     } else {
-        return ;
+        return printf("Comparação de Cartas (Atributo: População)\n\nCarta 1 - %s: %i\nCarta 2 - %s: %i\n\nResultado: Empate !", NomeDCidade1, ValCopiado1, NomeDCidade2, ValCopiado2);
     }
 } //Retorna a comparação dos valores das cartas em relação a estatística Pontos Turisticos
 
-int CompararDensidadeDemografica(float ValCopiado1,float ValCopiado2){
-    if(ValCopiado1 > ValCopiado2){
-        return ;
+int CompararDensidadeDemografica(float ValCopiado1, float ValCopiado2, char NomeDCidade1[], char NomeDCidade2[]){
+    if(ValCopiado1 < ValCopiado2){
+        return printf("Comparação de Cartas (Atributo: Densidade Demográfica)\n\nCarta 1 - %s: %.2f\nCarta 2 - %s: %.2f\n\nResultado: Carta 1 venceu !", NomeDCidade1, ValCopiado1, NomeDCidade2, ValCopiado2);
+    } else if(ValCopiado1 > ValCopiado2){
+        return printf("Comparação de Cartas (Atributo: Densidade Demográfica)\n\nCarta 1 - %s: %.2f\nCarta 2 - %s: %.2f\n\nResultado: Carta 2 venceu !", NomeDCidade1, ValCopiado1, NomeDCidade2, ValCopiado2);
     } else {
-        return ;
+        return printf("Comparação de Cartas (Atributo: População)\n\nCarta 1 - %s: %.2f\nCarta 2 - %s: %.2f\n\nResultado: Empate !", NomeDCidade1, ValCopiado1, NomeDCidade2, ValCopiado2);
     }
 } //Retorna a comparação dos valores das cartas em relação a estatística Densidade Demografica
 
-int CompararPIBPerCapita(float ValCopiado1,float ValCopiado2){
+int CompararPIBPerCapita(float ValCopiado1, float ValCopiado2, char NomeDCidade1[], char NomeDCidade2[]){
     if(ValCopiado1 > ValCopiado2){
-        return ;
+        return printf("Comparação de Cartas (Atributo: PIB per Capita)\n\nCarta 1 - %s: %.2f\nCarta 2 - %s: %.2f\n\nResultado: Carta 1 venceu !", NomeDCidade1, ValCopiado1, NomeDCidade2, ValCopiado2);
+    } else if(ValCopiado1 < ValCopiado2){
+        return printf("Comparação de Cartas (Atributo: PIB per Capita)\n\nCarta 1 - %s: %.2f\nCarta 2 - %s: %.2f\n\nResultado: Carta 2 venceu !", NomeDCidade1, ValCopiado1, NomeDCidade2, ValCopiado2);
     } else {
-        return ;
+        return printf("Comparação de Cartas (Atributo: População)\n\nCarta 1 - %s: %.2f\nCarta 2 - %s: %.2f\n\nResultado: Empate !", NomeDCidade1, ValCopiado1, NomeDCidade2, ValCopiado2);
     }
 } //Retorna a comparação dos valores das cartas em relação a estatística PIB Per Capita
 
-int CompararSuperPoder(float ValCopiado1,float ValCopiado2){
+int CompararSuperPoder(float ValCopiado1, float ValCopiado2, char NomeDCidade1[], char NomeDCidade2[]){
     if(ValCopiado1 > ValCopiado2){
-        return ;
+        return printf("Comparação de Cartas (Atributo: Super Poder)\n\nCarta 1 - %s: %.2f\nCarta 2 - %s: %.2f\n\nResultado: Carta 1 venceu !", NomeDCidade1, ValCopiado1, NomeDCidade2, ValCopiado2);
+    } else if(ValCopiado1 < ValCopiado2){
+        return printf("Comparação de Cartas (Atributo: Super Poder)\n\nCarta 1 - %s: %.2f\nCarta 2 - %s: %.2f\n\nResultado: Carta 2 venceu !", NomeDCidade1, ValCopiado1, NomeDCidade2, ValCopiado2);
     } else {
-        return ;
+        return printf("Comparação de Cartas (Atributo: População)\n\nCarta 1 - %s: %.2f\nCarta 2 - %s: %.2f\n\nResultado: Empate !", NomeDCidade1, ValCopiado1, NomeDCidade2, ValCopiado2);
     }
 } //Retorna a comparação dos valores das cartas em relação a estatística Super Poder
 
@@ -63,6 +80,7 @@ int main(){
     char nomedacidade1[150], nomedacidade2[150]; //string
     unsigned long int populacao1, populacao2; //numero inteiro
     int numeroponturisticos1, numeroponturisticos2; //numero inteiro
+    int numal; //numero inteiro
     float areakm21, areakm22; //numero decimal (com vírgula)
     float PIB1, PIB2; //numero decimal (com vírgula)
     float PIBPC1, PIBPC2; //numero decimal (com vírgula)
@@ -163,47 +181,36 @@ int main(){
 //------------------------------------------------------------------------------------------------------------------------
     printf("------------------------------------------------------------------------------------------------------------------------ \n");
 //------------------------------------------------------------------------------------------------------------------------ 
-    printf("Comparação de Cartas:\n\n");
-    if (populacao1 > populacao2){
-        printf("População: %s venceu.\n", nomedacidade1);
-    } else {
-        printf("População: %s venceu.\n", nomedacidade2);        
-    } // Comparando População
+    srand(time(NULL));
 
-    if (areakm21 > areakm22){
-        printf("Área: %s venceu.\n", nomedacidade1);
-    } else {
-        printf("Área: %s venceu.\n", nomedacidade2);        
-    } // Comparando Área
+    //numal vai receber um numero aleatório que vai decidir a estatistica a ser comparada
+    numal = rand() % (7-1+1) + 1;
+    switch(numal){
+        case 1:
+            CompararPopulacao(populacao1, populacao2, nomedacidade1, nomedacidade2);
+        break;
 
-    if (PIB1 > PIB2){
-        printf("PIB: %s venceu.\n", nomedacidade1);
-    } else {
-        printf("PIB: %s venceu.\n", nomedacidade2);        
-    } // Comparando PIB
+        case 2:
+            CompararArea(areakm21, areakm22, nomedacidade1, nomedacidade2);
+        break;
 
-    if (numeroponturisticos1 > numeroponturisticos2){
-        printf("Pontos Turísticos: %s venceu.\n", nomedacidade1);
-    } else {
-        printf("Pontos Turísticos: %s venceu.\n", nomedacidade2);        
-    } // Comparando Pontos Turísticos
+        case 3:
+            CompararPIB(PIB1, PIB2, nomedacidade1, nomedacidade2);
+        break;
 
-    if (DensDem1 > DensDem2){
-        printf("Densidade Populacional: %s venceu.\n", nomedacidade2);
-    } else {
-        printf("Densidade Populacional: %s venceu.\n", nomedacidade1);        
-    } // Comparando Densidade Populacional
+        case 4:
+            CompararPontosTuristicos(numeroponturisticos1, numeroponturisticos2, nomedacidade1, nomedacidade2);
+        break;
 
-    if (PIBPC1 > PIBPC2){
-        printf("PiB per Capita: %s venceu.\n", nomedacidade1);
-    } else {
-        printf("PiB per Capita: %s venceu.\n", nomedacidade2);        
-    } // Comparando PIB per Capita
+        case 5:
+            CompararDensidadeDemografica(DensDem1, DensDem2, nomedacidade1, nomedacidade2);
+        break;
 
-    if (SuperPoder1 > SuperPoder2){
-        printf("Super Poder: %s venceu.\n", nomedacidade1);
-    } else {
-        printf("Super Poder: %s venceu.\n", nomedacidade2);        
-    } // Comparando Super Poder
-    
-}
+        case 6:
+            CompararPIBPerCapita(PIBPC1, PIBPC2, nomedacidade1, nomedacidade2);
+        break;
+
+        case 7:
+            CompararSuperPoder(SuperPoder1, SuperPoder2, nomedacidade1, nomedacidade2);
+        break;
+    }    
